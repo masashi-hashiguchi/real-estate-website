@@ -38,10 +38,13 @@ There is nothing to compile, lint, or run as automated tests — verify changes 
 
 | Event | Fired from | When |
 |---|---|---|
+| `page_view` | `js/analytics.js` | Every page load, site-wide (explicit tag; GA4's automatic one is disabled via `send_page_view: false` to avoid double-counting). |
 | `cta_click` | any `[data-cta]` element (`js/main.js`) | Every CTA click, labeled by which CTA it was. |
-| `sign_up` | `js/register-form.js` | Registration form successfully validated & "submitted". |
-| `generate_lead` | `js/register-form.js` | Same moment as `sign_up`; GA4's standard lead-gen event. |
+| `sign_up` | `js/register-form.js` | Registration form successfully validated & "submitted" (conversion). |
+| `generate_lead` | `js/register-form.js` | Same moment as `sign_up`; GA4's standard lead-gen event (conversion). |
 | `view_conversion_page` | `thank-you.html` | Page load of the thank-you page. |
+
+`sign_up` and `generate_lead` are the form-submission conversion events. GA4 only counts an event toward "Conversions" once it's marked as a **Key event** in the GA4 Admin UI (Admin → Events → toggle "Mark as key event") — that's a one-time setup step in the GA4 property itself, not something set in code.
 
 **No backend yet.** `js/register-form.js`'s `handleSubmit()` validates the form, then simulates a submit with `setTimeout(...)` and redirects to `thank-you.html`. Before launch this `setTimeout` block must be replaced with a real `fetch()` call to a CRM/lead API (or form backend), redirecting only on a successful response.
 
