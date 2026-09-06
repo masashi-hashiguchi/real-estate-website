@@ -8,7 +8,7 @@
 
    TODO: Replace with the real GA4 Measurement ID (format: G-XXXXXXXXXX)
    ============================================================ */
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = "G-YVX2YS5FMT";
 
 (function initGoogleAnalytics() {
   if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === "G-XXXXXXXXXX") {
