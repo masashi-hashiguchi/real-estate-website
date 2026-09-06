@@ -27,6 +27,10 @@
           <li><a href="index.html#how-it-works">How It Works</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
         </ul>
+        <a class="btn btn--outline" href="tel:+10000000000" data-cta="header_call" style="white-space:nowrap;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2a1.5 1.5 0 011.5-.4 11.4 11.4 0 003.6.6 1.5 1.5 0 011.5 1.5V21a1.5 1.5 0 01-1.5 1.5A18 18 0 013 5.5 1.5 1.5 0 014.5 4h3.6a1.5 1.5 0 011.5 1.5 11.4 11.4 0 00.6 3.6 1.5 1.5 0 01-.4 1.5z" fill="currentColor"/></svg>
+          <span>Call Now</span>
+        </a>
         <a class="btn btn--primary" href="register.html" data-cta="header_register">Register Free</a>
         <button class="nav__toggle" data-nav-toggle aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span>
@@ -47,6 +51,10 @@
             <a class="btn btn--primary btn--lg" href="register.html" data-cta="hero_register">Get Free Member Access</a>
             <a class="btn btn--ghost btn--lg" href="#properties" data-cta="hero_browse">Browse Listings</a>
           </div>
+          <p style="margin-top:16px;">
+            Not ready to sign up?
+            <button type="button" class="link-btn link-btn--on-dark" data-open-inquiry="hero" data-cta="hero_quick_inquiry">Just ask us a quick question →</button>
+          </p>
           <div class="hero__trust">
             <div><strong>1,200+</strong><span>Active listings</span></div>
             <div><strong>8,500+</strong><span>Members</span></div>
@@ -163,6 +171,9 @@
               <div class="property__meta">
                 <span>3 bd</span><span>2 ba</span><span>1,850 sqft</span>
               </div>
+              <div class="property__actions">
+                <button type="button" class="btn btn--outline btn--sm" data-open-inquiry="property:maple-heights-482000" data-cta="property_ask_maple_heights">Ask About This Home</button>
+              </div>
             </div>
           </div>
           <div class="property">
@@ -179,6 +190,9 @@
               <div class="property__meta">
                 <span>2 bd</span><span>2 ba</span><span>1,120 sqft</span>
               </div>
+              <div class="property__actions">
+                <button type="button" class="btn btn--outline btn--sm" data-open-inquiry="property:riverside-condo-615500" data-cta="property_ask_riverside">Ask About This Home</button>
+              </div>
             </div>
           </div>
           <div class="property">
@@ -194,6 +208,9 @@
               <h3 style="font-size:1rem;margin-bottom:0;">Executive Home &mdash; Willow Creek</h3>
               <div class="property__meta">
                 <span>4 bd</span><span>3 ba</span><span>2,940 sqft</span>
+              </div>
+              <div class="property__actions">
+                <button type="button" class="btn btn--outline btn--sm" data-open-inquiry="property:willow-creek-1050000" data-cta="property_ask_willow_creek">Ask About This Home</button>
               </div>
             </div>
           </div>
@@ -291,7 +308,7 @@
               Do I have to work with an agent to register?
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </button>
-            <div class="faq-item__a"><p>Not at all. Browsing and saving listings is self-serve. Agent consultations are optional and free if you want one.</p></div>
+            <div class="faq-item__a"><p>Not at all. Browsing and saving listings is self-serve. Agent consultations are optional and free if you want one &mdash; or just <button type="button" class="link-btn" data-open-inquiry="faq" data-cta="faq_quick_inquiry">ask us a quick question</button> without registering.</p></div>
           </div>
           <div class="faq-item" data-open="false">
             <button class="faq-item__q" aria-expanded="false">
@@ -310,6 +327,7 @@
       <p>Join 8,500+ members getting early access to the best listings in the area.</p>
       <div class="hero__ctas" style="justify-content:center;">
         <a class="btn btn--primary btn--lg" href="register.html" data-cta="final_cta_register">Register Free — It Takes 60 Seconds</a>
+        <button type="button" class="btn btn--ghost btn--lg" data-open-inquiry="final_cta" data-cta="final_cta_quick_inquiry">Or Just Ask a Question</button>
       </div>
     </section>
   </main>
@@ -340,6 +358,7 @@
           <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="register.html">Register</a></li>
+            <li><button type="button" class="link-btn link-btn--on-dark" data-open-inquiry="footer" data-cta="footer_quick_inquiry" style="background:none;border:none;">Ask a Question</button></li>
           </ul>
         </div>
         <div>
@@ -358,5 +377,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/quick-inquiry.js"></script>
 </body>
 </html>

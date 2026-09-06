@@ -24,6 +24,10 @@
         <ul class="nav__links">
           <li><a href="index.html">Home</a></li>
         </ul>
+        <a class="btn btn--outline" href="tel:+10000000000" data-cta="register_header_call" style="white-space:nowrap;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2a1.5 1.5 0 011.5-.4 11.4 11.4 0 003.6.6 1.5 1.5 0 011.5 1.5V21a1.5 1.5 0 01-1.5 1.5A18 18 0 013 5.5 1.5 1.5 0 014.5 4h3.6a1.5 1.5 0 011.5 1.5 11.4 11.4 0 00.6 3.6 1.5 1.5 0 01-.4 1.5z" fill="currentColor"/></svg>
+          <span>Call Now</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -64,6 +68,12 @@
               <div><strong>Jamie R.</strong><span>First-time buyer</span></div>
             </div>
           </div>
+
+          <p class="form-hint" style="margin-top:24px;font-size:0.92rem;">
+            Not ready to create a full account?
+            <button type="button" class="link-btn" data-open-inquiry="register_page" data-cta="register_page_quick_inquiry">Just send us a quick question</button>
+            or <a href="tel:+10000000000" data-cta="register_page_call">call us</a> instead — no password required.
+          </p>
         </aside>
 
         <!-- ================= FORM ================= -->
@@ -149,6 +159,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/quick-inquiry.js"></script>
   <script src="js/register-form.js"></script>
 </body>
 </html>
