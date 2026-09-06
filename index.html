@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian Realty — Find Your Perfect Home</title>
+  <meta name="description" content="Register free with Meridian Realty for early access to new listings, price drop alerts, and off-market properties." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- GA4: measurement ID lives in js/analytics.js — see README.md -->
+  <script src="js/analytics.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__bar">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#0F2A3F"/>
+          <path d="M20 8L32 18V32H24V22H16V32H8V18L20 8Z" fill="#C8A24A"/>
+        </svg>
+        Meridian Realty
+      </a>
+      <nav class="nav" data-nav>
+        <ul class="nav__links">
+          <li><a href="index.html#properties">Properties</a></li>
+          <li><a href="index.html#benefits">Why Register</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn--primary" href="register.html" data-cta="header_register">Register Free</a>
+        <button class="nav__toggle" data-nav-toggle aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div>
+          <span class="eyebrow" style="color:#c8a24a;">Free Membership</span>
+          <h1>Find your perfect home before anyone else does</h1>
+          <p>Join Meridian Realty free and get early access to new listings, personalized price alerts, and exclusive off-market properties &mdash; before they hit the public market.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--lg" href="register.html" data-cta="hero_register">Get Free Member Access</a>
+            <a class="btn btn--ghost btn--lg" href="#properties" data-cta="hero_browse">Browse Listings</a>
+          </div>
+          <div class="hero__trust">
+            <div><strong>1,200+</strong><span>Active listings</span></div>
+            <div><strong>8,500+</strong><span>Members</span></div>
+            <div><strong>15 yrs</strong><span>In business</span></div>
+            <div><strong>4.9/5</strong><span>Client rating</span></div>
+          </div>
+        </div>
+        <div class="hero__art">
+          <svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a modern house">
+            <defs>
+              <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1a3c56"/>
+                <stop offset="1" stop-color="#0f2a3f"/>
+              </linearGradient>
+            </defs>
+            <rect width="480" height="400" fill="url(#skyGrad)"/>
+            <circle cx="400" cy="70" r="46" fill="#c8a24a" opacity="0.9"/>
+            <rect x="60" y="200" width="360" height="160" fill="#173a53"/>
+            <polygon points="60,200 240,110 420,200" fill="#c8a24a"/>
+            <rect x="220" y="260" width="60" height="100" fill="#0a1d2c"/>
+            <rect x="110" y="230" width="50" height="50" fill="#e7e2cf"/>
+            <rect x="320" y="230" width="50" height="50" fill="#e7e2cf"/>
+            <rect x="0" y="360" width="480" height="40" fill="#0a1d2c"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STAT BAR ================= -->
+    <div class="container">
+      <div class="statbar" style="border-bottom:1px solid var(--color-border);">
+        <div class="statbar__item"><strong>1,200+</strong><span>Properties listed</span></div>
+        <div class="statbar__item"><strong>8,500+</strong><span>Registered members</span></div>
+        <div class="statbar__item"><strong>320+</strong><span>Homes sold this year</span></div>
+        <div class="statbar__item"><strong>24hr</strong><span>Avg. agent response</span></div>
+      </div>
+    </div>
+
+    <!-- ================= BENEFITS ================= -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why register</span>
+          <h2>Everything you need to move first</h2>
+          <p>Membership is 100% free and takes less than a minute. Here's what you unlock the moment you sign up.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9H21.5L15.8 13.3L18 20L12 16L6 20L8.2 13.3L2.5 9H9.5L12 2Z" fill="currentColor"/></svg>
+            </div>
+            <h3>Early access to listings</h3>
+            <p>See new properties up to 48 hours before they're published publicly.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C10 6 6 9 6 14a6 6 0 0012 0c0-5-4-8-6-12z" fill="currentColor"/></svg>
+            </div>
+            <h3>Price drop alerts</h3>
+            <p>Get notified instantly by email when a saved property's price changes.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-8-4.6-8-11a4.8 4.8 0 018-3.6A4.8 4.8 0 0120 10c0 6.4-8 11-8 11z" fill="currentColor"/></svg>
+            </div>
+            <h3>Saved searches &amp; favorites</h3>
+            <p>Bookmark homes and neighborhoods, and pick up right where you left off.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="currentColor"/></svg>
+            </div>
+            <h3>Free agent consultation</h3>
+            <p>A local expert helps you shortlist homes that actually fit your budget.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" fill="currentColor"/></svg>
+            </div>
+            <h3>Off-market properties</h3>
+            <p>Browse a private inventory of homes not listed anywhere else.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>No obligation, ever</h3>
+            <p>Free forever. No credit card, no spam, unsubscribe with one click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROPERTIES ================= -->
+    <section class="section section--alt" id="properties">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Featured properties</span>
+          <h2>A preview of what members see first</h2>
+          <p>Full details, photos, and contact info are visible to registered members.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="property">
+            <div class="property__media">
+              <span class="property__badge">New listing</span>
+              <div class="property__lock">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" fill="#fff"/><path d="M8 11V8a4 4 0 018 0v3" stroke="#fff" stroke-width="2" fill="none"/></svg>
+                <span>Register to view full details</span>
+              </div>
+            </div>
+            <div class="property__body">
+              <div class="property__price">$482,000</div>
+              <h3 style="font-size:1rem;margin-bottom:0;">3 Bed Family Home &mdash; Maple Heights</h3>
+              <div class="property__meta">
+                <span>3 bd</span><span>2 ba</span><span>1,850 sqft</span>
+              </div>
+            </div>
+          </div>
+          <div class="property">
+            <div class="property__media">
+              <span class="property__badge">Price drop</span>
+              <div class="property__lock">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" fill="#fff"/><path d="M8 11V8a4 4 0 018 0v3" stroke="#fff" stroke-width="2" fill="none"/></svg>
+                <span>Register to view full details</span>
+              </div>
+            </div>
+            <div class="property__body">
+              <div class="property__price">$615,500</div>
+              <h3 style="font-size:1rem;margin-bottom:0;">Modern Condo &mdash; Riverside District</h3>
+              <div class="property__meta">
+                <span>2 bd</span><span>2 ba</span><span>1,120 sqft</span>
+              </div>
+            </div>
+          </div>
+          <div class="property">
+            <div class="property__media">
+              <span class="property__badge">Off-market</span>
+              <div class="property__lock">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" fill="#fff"/><path d="M8 11V8a4 4 0 018 0v3" stroke="#fff" stroke-width="2" fill="none"/></svg>
+                <span>Register to view full details</span>
+              </div>
+            </div>
+            <div class="property__body">
+              <div class="property__price">$1,050,000</div>
+              <h3 style="font-size:1rem;margin-bottom:0;">Executive Home &mdash; Willow Creek</h3>
+              <div class="property__meta">
+                <span>4 bd</span><span>3 ba</span><span>2,940 sqft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:36px;">
+          <a class="btn btn--primary btn--lg" href="register.html" data-cta="properties_unlock">Unlock Full Listings — Register Free</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps to your next home</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3>Register free</h3>
+            <p>Create your account in under a minute &mdash; no credit card required.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3>Set your preferences</h3>
+            <p>Tell us your budget, area, and must-haves so we can match you well.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3>Get matched listings</h3>
+            <p>Receive curated properties and alerts straight to your inbox.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What members say</span>
+          <h2>Trusted by thousands of home buyers</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="testimonial">
+            <p class="testimonial__quote">"We got a price-drop alert the same morning it happened and made an offer that afternoon. Registering was the best five minutes we spent."</p>
+            <div class="testimonial__person">
+              <div class="testimonial__avatar">JR</div>
+              <div><strong>Jamie R.</strong><span>First-time buyer</span></div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__quote">"The off-market listings alone were worth signing up for. Found our house two weeks before it was public."</p>
+            <div class="testimonial__person">
+              <div class="testimonial__avatar">AK</div>
+              <div><strong>Amir K.</strong><span>Relocated for work</span></div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__quote">"No pressure, no spam &mdash; just relevant listings in our price range every week."</p>
+            <div class="testimonial__person">
+              <div class="testimonial__avatar">SL</div>
+              <div><strong>Sofia L.</strong><span>Growing family</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq">
+          <div class="faq-item" data-open="true">
+            <button class="faq-item__q" aria-expanded="true">
+              Is membership really free?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a"><p>Yes. Registration is completely free, forever, with no credit card required and no hidden fees.</p></div>
+          </div>
+          <div class="faq-item" data-open="false">
+            <button class="faq-item__q" aria-expanded="false">
+              Will I be spammed with emails?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a"><p>No. You control your alert frequency and can unsubscribe from any email with one click.</p></div>
+          </div>
+          <div class="faq-item" data-open="false">
+            <button class="faq-item__q" aria-expanded="false">
+              Do I have to work with an agent to register?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a"><p>Not at all. Browsing and saving listings is self-serve. Agent consultations are optional and free if you want one.</p></div>
+          </div>
+          <div class="faq-item" data-open="false">
+            <button class="faq-item__q" aria-expanded="false">
+              How is my information used?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a"><p>We only use your details to match you with relevant listings. See our <a href="privacy.html">Privacy Policy</a> for details.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="cta-band">
+      <h2>Ready to find your next home?</h2>
+      <p>Join 8,500+ members getting early access to the best listings in the area.</p>
+      <div class="hero__ctas" style="justify-content:center;">
+        <a class="btn btn--primary btn--lg" href="register.html" data-cta="final_cta_register">Register Free — It Takes 60 Seconds</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html" style="color:#fff;">
+            <svg class="logo__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="40" height="40" rx="8" fill="#C8A24A"/>
+              <path d="M20 8L32 18V32H24V22H16V32H8V18L20 8Z" fill="#0F2A3F"/>
+            </svg>
+            Meridian Realty
+          </a>
+          <p style="margin-top:14px;max-width:32ch;color:rgba(255,255,255,0.6);">Helping buyers find their next home, faster and with fewer surprises.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#properties">Properties</a></li>
+            <li><a href="index.html#benefits">Why Register</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@meridianrealty.example">hello@meridianrealty.example</a></li>
+            <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Realty. All rights reserved.</span>
+        <span>Placeholder company &mdash; replace with real details before launch.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

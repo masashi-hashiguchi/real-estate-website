@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Free — Meridian Realty</title>
+  <meta name="description" content="Create your free Meridian Realty account for early access to listings, price alerts, and off-market properties." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- GA4: measurement ID lives in js/analytics.js — see README.md -->
+  <script src="js/analytics.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__bar">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#0F2A3F"/>
+          <path d="M20 8L32 18V32H24V22H16V32H8V18L20 8Z" fill="#C8A24A"/>
+        </svg>
+        Meridian Realty
+      </a>
+      <nav class="nav" data-nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="reg-layout">
+
+        <!-- ================= VALUE PROP ASIDE ================= -->
+        <aside>
+          <span class="eyebrow">Free membership</span>
+          <h1>Create your free account</h1>
+          <p>Join in under a minute and unlock the full experience &mdash; no credit card, no obligation.</p>
+
+          <ul class="reg-aside__list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Early access to new listings, 48 hours before the public
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Instant price-drop alerts for saved properties
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Access to off-market, members-only properties
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              A free, no-pressure consultation with a local agent
+            </li>
+          </ul>
+
+          <div class="testimonial" style="max-width:420px;">
+            <p class="testimonial__quote">"Registering took less than a minute and paid off within the week."</p>
+            <div class="testimonial__person">
+              <div class="testimonial__avatar">JR</div>
+              <div><strong>Jamie R.</strong><span>First-time buyer</span></div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- ================= FORM ================= -->
+        <div class="form-card">
+          <form id="register-form" novalidate>
+            <div class="form-row" data-field="fullName">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+              <div class="form-error" role="alert"></div>
+            </div>
+
+            <div class="form-row" data-field="email">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <div class="form-error" role="alert"></div>
+            </div>
+
+            <div class="form-row" data-field="phone">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+              <div class="form-error" role="alert"></div>
+            </div>
+
+            <div class="form-row--2col" style="margin-bottom:20px;">
+              <div class="form-row" data-field="area" style="margin-bottom:0;">
+                <label for="area">Preferred area</label>
+                <input type="text" id="area" name="area" placeholder="e.g. Riverside District" />
+              </div>
+              <div class="form-row" data-field="budget" style="margin-bottom:0;">
+                <label for="budget">Budget range</label>
+                <select id="budget" name="budget">
+                  <option value="">Select a range</option>
+                  <option value="under-300k">Under $300,000</option>
+                  <option value="300k-500k">$300,000 &ndash; $500,000</option>
+                  <option value="500k-800k">$500,000 &ndash; $800,000</option>
+                  <option value="800k-plus">$800,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row--2col" style="margin-bottom:20px;">
+              <div class="form-row" data-field="password" style="margin-bottom:0;">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="new-password" required />
+                <div class="form-error" role="alert"></div>
+              </div>
+              <div class="form-row" data-field="confirmPassword" style="margin-bottom:0;">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required />
+                <div class="form-error" role="alert"></div>
+              </div>
+            </div>
+            <p class="form-hint" style="margin-top:-10px;margin-bottom:20px;">At least 8 characters.</p>
+
+            <div class="checkbox-row" data-field="consent">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">I agree to the <a href="privacy.html">Privacy Policy</a> and Terms of Service.</label>
+            </div>
+            <div class="form-error" data-field="consent" style="margin-top:-12px;margin-bottom:12px;"></div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="marketingOptIn" name="marketingOptIn" checked />
+              <label for="marketingOptIn">Send me price alerts and new listing notifications by email.</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block btn--lg" data-submit-btn data-cta="form_submit">
+              Create My Free Account
+            </button>
+            <div class="form-status" data-form-status role="status"></div>
+            <p class="form-hint" style="text-align:center;margin-top:14px;">Already a member? <a href="index.html">Sign in from the homepage</a>.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" style="padding:24px 0;">
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Meridian Realty. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/register-form.js"></script>
+</body>
+</html>

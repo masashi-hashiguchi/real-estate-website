@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Meridian Realty</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- GA4: measurement ID lives in js/analytics.js — see README.md -->
+  <script src="js/analytics.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__bar">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#0F2A3F"/>
+          <path d="M20 8L32 18V32H24V22H16V32H8V18L20 8Z" fill="#C8A24A"/>
+        </svg>
+        Meridian Realty
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="simple-page">
+        <div class="simple-page__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h1>You're in! Welcome to Meridian Realty.</h1>
+        <p style="max-width:52ch;margin-left:auto;margin-right:auto;">
+          Your free account has been created. We'll start sending matched listings and
+          price alerts to your inbox based on your preferences.
+        </p>
+        <div class="simple-page__actions">
+          <a class="btn btn--primary btn--lg" href="index.html#properties" data-cta="thankyou_browse">Browse Properties</a>
+          <a class="btn btn--outline btn--lg" href="index.html" data-cta="thankyou_home">Back to Home</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" style="padding:24px 0;">
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Meridian Realty. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // This page is the destination of a completed registration, which
+    // makes it a natural place to (optionally) mark a GA4 Conversion
+    // on the "view_conversion_page" event in the GA4 UI, in addition
+    // to the "sign_up" / "generate_lead" events already fired from
+    // js/register-form.js right before the redirect here.
+    trackEvent("view_conversion_page", { page_name: "registration_thank_you" });
+  </script>
+</body>
+</html>
