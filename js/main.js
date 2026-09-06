@@ -34,12 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- CTA click tracking (any element flagged with data-cta) ---
   // Lets GA4 report which specific button/link drove each conversion,
   // without needing a change once the real measurement ID is in place.
-  document.querySelectorAll("[data-cta]").forEach((el) => {
-    el.addEventListener("click", () => {
-      trackEvent("cta_click", {
-        cta_label: el.getAttribute("data-cta"),
-        page_location: window.location.pathname,
-      });
+  // Delegated on `document` (rather than bound per-element at load time)
+  // so it also covers elements injected later, e.g. the floating quick-
+  // inquiry button and modal added by js/quick-inquiry.js.
+  document.addEventListener("click", (event) => {
+    const el = event.target.closest("[data-cta]");
+    if (!el) return;
+    trackEvent("cta_click", {
+      cta_label: el.getAttribute("data-cta"),
+      page_location: window.location.pathname,
     });
   });
 });
