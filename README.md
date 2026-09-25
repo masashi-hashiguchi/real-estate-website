@@ -12,6 +12,7 @@ build step, no dependencies — just HTML, CSS, and vanilla JS. Open
 | Registration Form | `register.html` | Member sign-up form (name, email, phone, area, budget, password, consent). Client-side validated in `js/register-form.js`. |
 | Thank You | `thank-you.html` | Post-registration confirmation page. Fires the GA4 conversion events. `noindex` so it doesn't get indexed by search engines. |
 | Privacy Policy | `privacy.html` | **Placeholder legal copy** — linked from the registration consent checkbox. Replace with real, legally-reviewed text before launch. |
+| Company | `company.html` | Brand story and a **placeholder** company profile (name, founded, representative, address, contact). Replace the details in the profile before launch. |
 
 ## Structure
 
@@ -20,6 +21,7 @@ index.html
 register.html
 thank-you.html
 privacy.html
+company.html
 css/styles.css        shared styles (single stylesheet, no framework)
 js/analytics.js        GA4 setup — the ONLY file to edit when the GA4 tag is shared
 js/main.js              shared behavior: mobile nav, FAQ accordion, CTA click tracking
@@ -37,7 +39,7 @@ needed when it arrives:
    const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
    ```
 3. That's it. Every page (`index.html`, `register.html`, `thank-you.html`,
-   `privacy.html`) already loads `js/analytics.js` first, so tracking goes
+   `privacy.html`, `company.html`) already loads `js/analytics.js` first, so tracking goes
    live everywhere at once — no per-page edits needed.
 
 Until a real ID is set, `js/analytics.js` intentionally **skips loading**

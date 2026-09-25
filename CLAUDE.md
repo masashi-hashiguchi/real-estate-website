@@ -27,6 +27,7 @@ There is nothing to compile, lint, or run as automated tests — verify changes 
 | Registration Form | `register.html` | Member sign-up form. Validated client-side by `js/register-form.js`. |
 | Thank You | `thank-you.html` | Post-registration confirmation; fires GA4 conversion events; `noindex`. |
 | Privacy Policy | `privacy.html` | **Placeholder legal copy**, linked from the registration consent checkbox — must be replaced with real, legally-reviewed text before launch. |
+| Company | `company.html` | Brand story, values, and a **placeholder** company profile (`.company-profile` definition list). Replace the profile details with real registered company information before launch. |
 
 **Shared assets:**
 - `css/styles.css` — single stylesheet, no framework. Brand colors are CSS custom properties at the top of the file (`--color-navy`, `--color-gold`, etc.).
@@ -54,5 +55,5 @@ The current name, navy/gold color scheme, and all copy/testimonials/stats are pl
 - Company name: search-and-replace `Meridian Realty` across all `.html` files.
 - Colors: edit the CSS custom properties at the top of `css/styles.css`.
 - Copy, stats, testimonials, FAQ: edit directly in `index.html`.
-- Contact details / social links: footer of `index.html`.
+- Contact details / social links: footer of `index.html`, plus the company profile on `company.html`.
 - Property photos: `.property__media` currently uses a CSS gradient placeholder — swap in real photos via `background-image` or an `<img>`.

@@ -850,6 +850,47 @@ p {
   margin-bottom: 32px;
 }
 
+/* ---------- Company profile ---------- */
+.company-profile {
+  max-width: 720px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.company-profile__row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.company-profile__row:last-child {
+  border-bottom: none;
+}
+
+.company-profile dt,
+.company-profile dd {
+  margin: 0;
+  padding: 16px 24px;
+}
+
+.company-profile dt {
+  color: var(--color-navy-dark);
+  font-weight: 700;
+  background: rgba(15, 42, 63, 0.03);
+}
+
+.company-profile dd {
+  color: var(--color-text);
+}
+
+.company-profile dd a {
+  color: var(--color-gold-dark);
+}
+
 /* ---------- Utility ---------- */
 .visually-hidden {
   position: absolute;
@@ -942,5 +983,18 @@ p {
 
   .form-card {
     padding: 24px;
+  }
+
+  .company-profile__row {
+    grid-template-columns: 1fr;
+  }
+
+  .company-profile dt,
+  .company-profile dd {
+    padding: 12px 20px;
+  }
+
+  .company-profile dd {
+    padding-top: 0;
   }
 }
